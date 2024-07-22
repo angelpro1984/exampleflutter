@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
                   style: TextStyle(fontSize: 60, color: Colors.red),
                 ),
                 const Image(
-                  image: AssetImage('assents/logo01.png'),
+                  image: AssetImage('assents/logo.png'),
                   width: 300,
                   height: 300,
                 ),

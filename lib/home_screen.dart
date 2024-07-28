@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Nociones de Flutter'),
+        title: const Text('Zapatos deportivos para todos'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: Padding(
@@ -19,41 +19,33 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               children: [
                 const Text(
-                  "Aprendiendo Flutter",
+                  "CredeShoes",
                   style: TextStyle(fontSize: 60, color: Colors.red),
                 ),
                 const Image(
-                  image: AssetImage('assents/logo.png'),
-                  width: 300,
-                  height: 300,
+                  image: AssetImage('assents/LogoCredeShoes.png'),
+                  width: 400,
+                  height: 400,
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 5,
                 ),
                 Image.network(
-                  'https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_960_720.jpg',
-                  width: 300,
-                  height: 300,
+                  'https://i0.wp.com/vistazoalfuturo.com/wp-content/uploads/2023/11/Rodrigo-Besoy-Sanchez-Calzado-deportivo-marca-un-cambio.jpeg?w=500&ssl=1',
+                  width: 400,
+                  height: 400,
                 ),
                 const Text(
-                  "La página de Ángel",
+                  "Encuentra el mejor calzado deportivo con nosotros",
                   style: TextStyle(
                       fontSize: 40, color: Color.fromARGB(255, 89, 0, 255)),
                 ),
-                const SizedBox(height: 100),
-                const Row(
-                  children: [
-                    ElevatedButton(onPressed: null, child: Text("Aceptar1")),
-                    Text("Hola mund0 3"),
-                    ElevatedButton(onPressed: null, child: Text("Aceptar3"))
-                  ],
-                ),
                 const SizedBox(
-                  height: 10,
+                  height: 50,
                 ),
                 Center(
                   child: Wrap(
-                    spacing: 10,
+                    spacing: 300,
                     children: [
                       ElevatedButton(
                           onPressed: () {
@@ -76,7 +68,7 @@ class HomeScreen extends StatelessWidget {
                               MaterialPageRoute(
                                   builder: (context) => Ventana1()));
                         },
-                        child: Text('Botón 3'),
+                        child: Text('Contáctanos'),
                       )
                     ],
                   ),

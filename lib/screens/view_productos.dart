@@ -31,6 +31,7 @@ class ViewProductos extends StatelessWidget {
             } else if (data.hasData) {
               var items = data.data as List<ProductDataModel>;
               return ListView.builder(
+                  // ignore: unnecessary_null_comparison
                   itemCount: items == null ? 0 : items.length,
                   itemBuilder: (context, index) {
                     return Card(
